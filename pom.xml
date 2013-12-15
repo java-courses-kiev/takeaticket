@@ -23,6 +23,8 @@
   </dependencies>
   <build>
     <finalName>take-a-ticket</finalName>
+    <sourceDirectory>src/main/webapp/java</sourceDirectory>
+    <testSourceDirectory>src/test/java</testSourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
