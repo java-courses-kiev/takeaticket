@@ -16,7 +16,7 @@ import javax.persistence.TemporalType;
 
 @Entity
 public class Ticket {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int ticketId;
@@ -38,6 +38,8 @@ public class Ticket {
 	
 	@Temporal(TemporalType.DATE)
 	private Date departureTime;
+
+  private int shiftDays;
 
 	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@JoinColumn(name= "orderId")

@@ -1,0 +1,122 @@
+#takLoginForm {
+    position: absolute;
+    top: 28%;
+    left: 37%;
+    width: 500px;
+    height: 250px;
+}
+
+#takOrderForm {
+    position: absolute;
+    top: 28%;
+    left: 27%;
+    width: 900px;
+    height: 250px;
+}
+
+#takFormHeader {
+    font-family: hell;
+    font-size: 60px;
+    position: relative;
+    top: -50px;
+    left: -10px;
+}
+
+#takFormTable {
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+
+@font-face {
+    font-family: hell;
+}
+
+header  {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: #ffca00;
+}
+
+body {
+    margin: 0 auto;
+}
+
+table{
+    border-spacing: 5px;
+}
+
+.fieldName {
+    font-family: hell;
+    font-size: 30px;
+}
+
+#submitButton {
+    position: relative;
+    top: 12%;
+    left: 20%;
+    -moz-box-shadow:inset 0px 0px 2px 0px #fce2c1;
+    -webkit-box-shadow:inset 0px 0px 2px 0px #fce2c1;
+    box-shadow:inset 0px 0px 2px 0px #fce2c1;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffca00), color-stop(1, #ffca00) );
+    background:-moz-linear-gradient( center top, #ffca00 5%, #ffca00 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25');
+    background-color:#ffca00;
+    -webkit-border-top-left-radius:20px;
+    -moz-border-radius-topleft:20px;
+    border-top-left-radius:20px;
+    -webkit-border-top-right-radius:20px;
+    -moz-border-radius-topright:20px;
+    border-top-right-radius:20px;
+    -webkit-border-bottom-right-radius:20px;
+    -moz-border-radius-bottomright:20px;
+    border-bottom-right-radius:20px;
+    -webkit-border-bottom-left-radius:20px;
+    -moz-border-radius-bottomleft:20px;
+    border-bottom-left-radius:20px;
+    text-indent:0;
+    border:1px solid #eeb44f;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial Black;
+    font-size:20px;
+    font-weight:bold;
+    font-style:normal;
+    height:55px;
+    /*line-height:65px;*/
+    /*width:131px*/
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 0px 0px #cc9f52;
+}
+#submitButton :hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffca00), color-stop(1, #ffc477) );
+    background:-moz-linear-gradient( center top, #ffca00 5%, #ffc477 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fb9e25', endColorstr='#ffc477');
+    background-color:#ffca00;
+}
+/*#submitButton:active {*/
+    /*position:relative;*/
+    /*top:1px;*/
+/*}*/
+#arrowButton {
+    position: relative;
+    top: 12%;
+    left: 20%;
+    /*background-image:"/images/arrow.jpg");*/
+}
+.textField {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: black;
+}
+
+#userRow {
+
+}
+#passRow {
+    position: relative;
+    top: 10px;
+}
