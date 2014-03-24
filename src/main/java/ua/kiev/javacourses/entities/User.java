@@ -1,6 +1,7 @@
 package ua.kiev.javacourses.entities;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by Алена on 19.03.14.
@@ -16,20 +17,19 @@ public class User {
     @Column(unique=true)
     private String login;
     private String password;
-    private String name;
+    private String userName;
     private String mail;
 
     @OneToMany
     @JoinColumn(name="OrderId")
-    private ClientOrder clientOrder;
+    private List<ClientOrder> orders;
 
     public User(String login, String password) {
         this.login = login;
         this.password = password;
     }
 
-    public User() {
-    }
+    public User() { /*NOP*/ }
 
     public int getUserId() {
         return userId;
@@ -55,12 +55,12 @@ public class User {
         this.password = password;
     }
 
-    public String getName() {
-        return name;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getMail() {
@@ -71,23 +71,23 @@ public class User {
         this.mail = mail;
     }
 
-    public ClientOrder getClientOrder() {
-        return clientOrder;
+    public List<ClientOrder> getOrders() {
+        return orders;
     }
 
-    public void setClientOrder(ClientOrder clientOrder) {
-        this.clientOrder = clientOrder;
+    public void setOrders(List<ClientOrder> orders) {
+        this.orders = orders;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "userId='" + userId + '\'' +
+                "userId=" + userId +
                 ", login='" + login + '\'' +
                 ", password='" + password + '\'' +
-                ", name='" + name + '\'' +
+                ", userName='" + userName + '\'' +
                 ", mail='" + mail + '\'' +
-                ", clientOrder=" + clientOrder +
+                ", orders=" + orders +
                 '}';
     }
 }
